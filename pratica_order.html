@@ -5,10 +5,90 @@
      <meta name="viewport" contetn="width-device-width, initial-scale=1.0">
      <title>Fundamentos - order</title>
      <style>
-         
+         .flex-container{
+             display: flex;
+             max-width: 350px;
+             border: 1px solid black;
+             margin-bottom: 20px;
+         }
+
+         .direction{
+             flex-direction: column;
+         }
+
+         .item{
+             flex: 1;
+             background: brown;
+             color: white;
+             text-align: center;
+             font-size: 25px;
+             margin: 5px;
+             
+         }
+
+         .direction{
+
+         }
+
+         .o1{
+           order: 1;  
+         }
+
+         .o2{
+           order: 2;  
+         }
+
+         .o3{
+           order: 3;  
+         }
+
+         .o4{
+           order: 4;  
+         }
+
+         .o5{
+           order: 5;  
+         }
+
      </style>
  </head>
  <body>
-     
+    <h1>Row</h1> 
+    <p>order: 0</p>
+     <div class="flex-container">
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+         <div class="item">5</div>
+     </div>
+
+     <p>order: diferentes</p>
+     <div class="flex-container">
+         <div class="item o5">1</div>
+         <div class="item o4 ">2</div>
+         <div class="item o2">3</div>
+         <div class="item o3">4</div>
+         <div class="item o1">5</div>
+     </div>
+      
+     <h1>Column</h1>
+     <p>order: 0</p>
+     <div class="flex-container direction">
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+         <div class="item">5</div>
+     </div>
+
+     <p>order: diferentes</p>
+     <div class="flex-container direction">
+         <div class="item o1">1</div>
+         <div class="item o2 ">2</div>
+         <div class="item o3">3</div>
+         <div class="item o3">4</div>
+         <div class="item o4">5</div>
+     </div>
  </body>     
 </html>
